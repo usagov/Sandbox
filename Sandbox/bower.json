@@ -1,0 +1,19 @@
+{
+  "name": "Sandbox: Scams and Frauds",
+  "version": "1.0.0",
+  "homepage": "https://",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "authors": [
+    "Dave Stenger <david.stenger@gsa.gov>"
+  ],
+  "description": "Scams, Frauds, USAGov",
+  "main": "css/skeleton.css",
+  "keywords": [
+    "css",
+    "responsive",
+    "boilerplate"
+  ],
+}
