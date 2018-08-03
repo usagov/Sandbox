@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -26,80 +26,108 @@
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/Favicon.png">
 
 </head>
-<body>
+
+<body id="kss-node">
+
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main id="kss-main-content">
 
-  <div class="section hero" role="main">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h1 class="hero-heading">What are common scams and how do I spot them?</h1>
-        </div>
-        <div class="one-half column phones">
-          <img class="phone" src="images/scam.jpg" alt="bubble image of different kind of scams and frauds with a person holding a cell phone.">
+    <!-- Skip to main content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="skiplinkholder">
+      <p>
+        <a id="skiplink" href="#skiptarget">
+  				Skip to main content (Press Enter).</a> </p>
+    </div>
+
+    <div class="section hero" role="main">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <h1 class="hero-heading">What are common scams and how do I spot them?</h1>
+          </div>
+          <div class="one-half column phones">
+            <img class="phone" src="images/scam.jpg" alt="bubble image of different kind of scams and frauds with a person holding a cell phone.">
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="section values">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="value-multiplier">Don't send money</h2>
-          <p class="value-heading">to someone you don't know.<p>
-          <p class="value-description">A legitimate prize won’t require you to pay in order to receive it.</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h3 class="value-heading">Scams</h3>
-          <p class="value-description">text</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">86%</h2>
-          <h3 class="value-heading">Sad Users</h3>
-          <p class="value-description">Percentage of users that are frustrated with scams.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section get-help">
-    <div class="container">
-      <h2 class="section-heading">Need help reporting a scam or fraud</h2>
-      <p class="section-description">Add text</p>
-      <a class="button button-primary" href="#nogo">View interview docs</a>
-    </div>
-  </div>
-
-  <div class="section categories">
-    <div class="container">
-      <h2 class="section-heading">More Scam and Fraud stuff</h2>
-      <p class="section-description">Enter more text about scams and frauds.</p>
-      <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png" alt="">
-        </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png" alt="">
+    <div class="section values">
+      <p id="skiptargetholder">
+        <a id="skiptarget" name="skiptarget" class="skip" tabindex="-1" href="#skiptarget">
+    Start of main content</a> </p>
+      <div class="container">
+        <div class="row">
+          <div class="one-third column value">
+            <h2 class="value-multiplier">Don't send money</h2>
+            <p class="value-heading">to someone you don't know.
+              <p>
+                <p class="value-description">A legitimate prize won’t require you to pay in order to receive it.</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">90%</h2>
+            <h3 class="value-heading">Scams</h3>
+            <p class="value-description">text</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">86%</h2>
+            <h3 class="value-heading">Sad Users</h3>
+            <p class="value-description">Percentage of users that are frustrated with scams.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="section get-help">
+      <div class="container">
+        <h2 class="section-heading">Need help reporting a scam or fraud</h2>
+        <p class="section-description">Add text</p>
+        <a class="button button-primary" href="#nogo">View interview docs</a>
+      </div>
+    </div>
 
+    <div class="section categories">
+      <div class="container">
+        <h2 class="section-heading">More Scam and Fraud stuff</h2>
+        <p class="section-description">Enter more text about scams and frauds.</p>
+        <div class="row">
+          <div class="one-half column category">
+            <img class="u-max-full-width" src="images/placeholder.png" alt="">
+          </div>
+          <div class="one-half column category">
+            <img class="u-max-full-width" src="images/placeholder.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Back to top
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
 
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/back-to-top.js "></script>
+
 </body>
 </html>
