@@ -43,10 +43,12 @@
     
 <!-- Start of Focus Code -->   
 <script>
-$(document).ready(function(){
-$("div.widget-launcher").focusin(function(){
-    $("this").css("background-color", "yellow");
-    });
+var widget=jQuery('.widget-launcher');
+widget.attr('tabindex','0');
+jQuery(document).keypress(function(e) {
+    if( e.which == 13 && widget.is(":focus") ) {
+        widget.click();
+    }
 });
 </script>
 <!-- End of Focus Code -->
