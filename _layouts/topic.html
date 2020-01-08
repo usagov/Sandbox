@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<section id="filterResultsSection" class="usa-graphic_list">
+  <h2>Results Related to your Filters</h2>
+  {% for topic in site.topics %}
+    <div class="usa-media_block-body topic" data-tags="{{ topic.tags | join: " " }}">
+      <h3>
+        <a href="{{ site.baseurl }}{{ topic.url }}">
+          {{ topic.title }}
+        </a>
+      </h3>
+      <p>{{ topic.description | join: ", " }}</p>
+    </div>
+  {% endfor %}
+  <div class="usa-media_block-body emptySet">
+    <h3>
+      There are no results that match your selected filters.
+    </h3>
+  </div>
+</section>
+
+<section id="relatedTopicsSection" class="usa-graphic_list">
+  <h2>Related Topics</h2>
+  {% for topic in site.topics %}
+    {% if topic.related-topic == "passport" %}
+    <div class="usa-media_block-body topic" data-tags="{{ topic.tags | join: " " }}">
+      <h3>
+        <a href="{{ site.baseurl }}{{ topic.url }}">
+          {{ topic.title }}
+        </a>
+      </h3>
+      <p>{{ topic.description | join: ", " }}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>
